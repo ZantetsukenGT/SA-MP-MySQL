@@ -1,7 +1,7 @@
 {
     "user": "ZantetsukenGT",
     "repo": "SA-MP-MySQL",
-    "include_path": "pawn-includes"
+    "include_path": "pawn-includes",
     "resources": [
         {
             "name": "^mysql-.+-([Dd]ebian[0-9]?|[Ll]inux)-static.+$",
