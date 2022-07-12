@@ -1,31 +1,30 @@
 {
-    "user": "pBlueG",
+    "user": "ZantetsukenGT",
     "repo": "SA-MP-MySQL",
+    "include_path": "pawn-includes"
     "resources": [
         {
-            "name": "^mysql-.+-([Dd]ebian[0-9]?|[Ll]inux)-static\\.tar\\.gz$",
+            "name": "^mysql-.+-([Dd]ebian[0-9]?|[Ll]inux)-static.+$",
             "platform": "linux",
             "archive": true,
-            "includes": ["mysql-.+\\/pawno\\/include"],
-            "plugins": ["mysql-.+\\/plugins\\/mysql.so"],
+            "plugins": ["mysql-.+/plugins/mysql.so"],
             "files": {
-                "mysql-.+\\/log-core.so": "log-core.so"
+                "mysql-.+/log-core.so": "log-core.so"
             }
         },
         {
-            "name": "^mysql-.+-win(32)?.zip$",
+            "name": "^mysql-.+-win(32)?.+$",
             "platform": "windows",
             "archive": true,
-            "includes": ["mysql-.+\\/pawno\\/include"],
-            "plugins": ["mysql-.+\\/plugins\\/mysql.dll"],
+            "plugins": ["mysql-.+/plugins/mysql.dll"],
             "files": {
-                "mysql-.+\\/log-core.dll": "log-core.dll",
-                "mysql-.+\\/libmariadb.dll": "libmariadb.dll"
+                "mysql-.+/log-core.dll": "log-core.dll",
+                "mysql-.+/libmariadb.dll": "libmariadb.dll"
             }
         }
     ],
     "runtime": {
-        "plugins": ["pBlueG/SA-MP-MySQL"]
+        "plugins": ["ZantetsukenGT/SA-MP-MySQL"]
     },
     "contributors": [
         "AndreT",
