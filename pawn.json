@@ -7,19 +7,19 @@
             "name": "^mysql-.+-([Dd]ebian[0-9]?|[Ll]inux)-static.+$",
             "platform": "linux",
             "archive": true,
-            "plugins": ["mysql-.+/plugins/mysql.so"],
+            "plugins": ["plugins/mysql.so"],
             "files": {
-                "mysql-.+/log-core.so": "log-core.so"
+                "log-core.so": "log-core.so"
             }
         },
         {
             "name": "^mysql-.+-win(32)?.+$",
             "platform": "windows",
             "archive": true,
-            "plugins": ["mysql-.+/plugins/mysql.dll"],
+            "plugins": ["plugins/mysql.dll"],
             "files": {
-                "mysql-.+/log-core.dll": "log-core.dll",
-                "mysql-.+/libmariadb.dll": "libmariadb.dll"
+                "log-core.dll": "log-core.dll",
+                "libmariadb.dll": "libmariadb.dll"
             }
         }
     ],
